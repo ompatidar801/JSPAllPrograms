@@ -1,0 +1,39 @@
+
+<taglib>
+  <tlib-version>2.0</tlib-version>
+  <jsp-version>2.0</jsp-version>
+  <tag>
+    <name>code</name>
+    <tag-class>customTagExample.HelloTag</tag-class>
+    <body-content>tagdependent</body-content>
+    <attribute>
+      <name>fontAttributes</name>
+    </attribute>
+    <attribute>
+      <name>commentColor</name>
+    </attribute>
+    <attribute>
+      <name>quoteColor</name>
+    </attribute>
+      </tag>
+    
+    <tag>
+      <name>Hello</name>
+      <tag-class>customTagExample.CustomTagExample1</tag-class>
+      <body-content>empty</body-content>
+   </tag>
+
+	<tag>
+		<name>add</name>
+		<tag-class>customTagExample.AdditionTag</tag-class>
+		<attribute>
+					<name>num1</name>
+					<required>true</required>
+		</attribute>
+		<body-content>jsp</body-content>
+		<attribute>
+					<name>num2</name>
+					<required>false</required>
+		</attribute>
+	</tag>
+</taglib>
